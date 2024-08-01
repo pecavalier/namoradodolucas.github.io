@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="css/site.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oi gays</title>
+    <title>Gays</title>
     <style>
         body{
-            background-color: rgb(224, 86, 236);
+            background-color: rgb(29, 233, 22); 
             color: rgb(0, 0, 0);
             font: 13pt Arial;
         }
@@ -15,10 +15,8 @@
 </head>
 <body> 
     
-    <h1>Quem é o namorado(a) do Lucas?</h1> 
-    Digite o nome aqui: <input type="text" name="txtnome" id="txtnome">
-    <input type="button" value="Verificar" onclick="calcular()">
-    <div id="res">
+    <h1>Casamento do Heitor</h1> 
+    
 
     </div>
     <script>
@@ -26,16 +24,16 @@
             var nome = document.getElementById('txtnome')
             var res = document.querySelector('div#res')
             var nome2 = String(nome.value)
-            res.innerHTML = `<p>Se você acha que é ${nome2}:</p>`
-            if (nome2 == "Heitor" ) {
-                res.innerHTML += `<p>Você acertou!</p>`
+            res.innerHTML = `<p>Qual o namorado do Heitor?${nome2}!</p>`
+            if (nome2 == "Lucas" || nome2 == "lucas" || nome2 == "luquinhas" ) {
+                res.innerHTML += `<p>Acertou!</p>`
             } else { 
-                if (nome2 == "heitor") {
-                    res.innerHTML += `<p>Você acertou!</p>`
+                if (nome2 == "pierre") {
+                    res.innerHTML += `<p>Ele foi corno</p>`
                 } else {
-                    if (nome2 == "qdakjcakncao") {
-                        res.innerHTML += `<p>Você é minha irmã</p>`
-                    } else res.innerHTML += `<p> Você <strong>não</strong> acertou :(</p>`
+                    if (nome2 == "L" || nome2 == "Helo" || nome2 == "Heloisa" ) {
+                        res.innerHTML += `<p>Ele é gay</p>`
+                    } else res.innerHTML += `<p> Você <strong>é</strong> viado!</p>`
                 }
                 
             }
