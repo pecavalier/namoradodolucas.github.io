@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/site.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oi gays</title>
+    <style>
+        body{
+            background-color: rgb(224, 86, 236);
+            color: rgb(0, 0, 0);
+            font: 13pt Arial;
+        }
+    </style>
+</head>
+<body> 
+    
+    <h1>Quem é o namorado(a) do Lucas?</h1> 
+    Digite o nome aqui: <input type="text" name="txtnome" id="txtnome">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var nome = document.getElementById('txtnome')
+            var res = document.querySelector('div#res')
+            var nome2 = String(nome.value)
+            res.innerHTML = `<p>Se você acha que é ${nome2}:</p>`
+            if (nome2 == "Heitor" ) {
+                res.innerHTML += `<p>Você acertou!</p>`
+            } else { 
+                if (nome2 == "heitor") {
+                    res.innerHTML += `<p>Você acertou!</p>`
+                } else {
+                    if (nome2 == "qdakjcakncao") {
+                        res.innerHTML += `<p>Você é minha irmã</p>`
+                    } else res.innerHTML += `<p> Você <strong>não</strong> acertou :(</p>`
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>
